@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/juggling-balls">Back</a>
+
+      <form class="form" action="/juggling-trick" method="post">
+     
+        <div class="form-group">
+          <fieldset>
+        
+            <legend>
+              <h3 class="heading-large">What items can you juggle with?</h3>
+              <span class="body-text">Select all that apply</span>
+            </legend>
+        
+            <div class="multiple-choice">
+              <input id="waste-type-1" name="juggling-tools" type="checkbox" value="balls" {{ checked("juggling-tools", "balls") }}>
+              <label for="waste-type-1">Balls</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="waste-type-2" name="juggling-tools" type="checkbox" value="clubs" {{ checked("juggling-tools", "clubs") }}>
+              <label for="waste-type-2">Clubs</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="waste-type-3" name="juggling-tools" type="checkbox" value="chainsaws" {{ checked("juggling-tools", "chainsaws") }}>
+              <label for="waste-type-3">Chainsaws</label>
+            </div>
+        
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

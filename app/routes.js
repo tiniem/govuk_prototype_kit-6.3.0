@@ -15,7 +15,7 @@ router.post('/juggling-balls-answer', function (req, res) {
   // Check whether the variable matches a condition
   if (jugglingBalls == "3 or more"){
     // Send user to next page
-    res.redirect('/juggling-trick')
+    res.redirect('/juggling-tools')
   }
   else {
     // Send user to ineligible page
